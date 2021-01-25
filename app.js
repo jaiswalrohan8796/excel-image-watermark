@@ -12,7 +12,7 @@ const Records = require("./models/model.js");
 
 //configurations
 dotenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.mongodbURI;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
